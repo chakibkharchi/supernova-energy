@@ -1,0 +1,901 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+
+ }
+/**************************************************************************************************************************************************************************************/
+/*****************page d'acceuil*******************************************************************************************************************************************************/
+/**************************************************************************************************************************************************************************************/
+
+body {
+    font-family: 'Fredoka', sans-serif;
+    background-color: #D8BB7F;
+ }
+
+header{
+    height: 100vh;
+    width: 100wh;
+    background-image: url(img/panneau.jpg); 
+    background-size: 1500px 1000px;
+ }   
+header h1{
+    font-family: 'Fredoka', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    position: center;
+    text-align: center;
+    font-size: 60px;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 20%;
+
+ }
+/**************************************/
+/*****nav bar*************************/
+/************************************/
+.navbar{
+    flex-wrap: wrap;
+    margin: 20px;
+    display: flex ;
+    justify-content: space-between;
+    width: 95%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    text-decoration: none;
+    position: absolute;
+ }
+.navbar a{
+    color: rgb(238, 192, 148);
+    font-size: 20px;
+ }
+.navbar .logo{
+   font-size: 2em;
+   font-weight:bold ;
+   text-shadow: 4px 4px 7px black;
+   color: #FAA700;
+
+ }
+
+.navbar .navlink {
+    display: flex;
+    align-items: center;
+ }
+.navbar .navlink ul{
+    display: flex;
+ }
+.navbar .navlink ul li {
+    margin: 0 25px;
+
+ }
+.navbar .navlink ul li a:hover{
+ color: white;
+ font-weight: 100px;
+ transition: 0.8s;
+ }
+.navbar .menu-humburger{
+    display: none;
+    mask-position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 35px;
+ }
+
+@media screen and  (max-width:900px) {
+   .navbar .navlink{
+        display: none;
+    }
+ }
+
+
+/**************************************/
+ /*****boutons (etude/maintenance)******/
+/**************************************/
+header div.etude {
+ 
+    padding-left: 0;
+    padding-right: 0;
+    padding-left: 7%;
+  padding-top: 10%;
+
+ }
+header div.etude  a{ 
+    font-size: 35px; 
+    padding-left: 55px;
+    margin-left: 50px;
+    padding-right: 55px;
+    margin-right: 50px;
+    padding-top: 25px;
+    padding-bottom:25px ; 
+    left: 15%;
+    border: 2px 2px solid black;
+    border-top-right-radius:15px ;
+    border-bottom-left-radius:15px ;
+    border-bottom-right-radius:-15px ;
+    border-top-left-radius:-15px ;
+    box-shadow: 4px 4px 11px black;  
+    background-color: #001956;
+    color: white;
+ }
+header div.etude  p{
+    display: none;
+ }
+header div.etude  a:hover{ 
+    background-color: white ;
+    color: #001956;
+    transition: 1.3s;
+
+ }
+
+/**************************************/
+ /**************definition**************/
+/**************************************/
+
+section.def{
+    box-sizing: border-box;
+ }
+body section.def div.img {
+  /* The image used */
+  background-image: url("https://www.trepia.fr/wp-content/uploads/2020/04/test-panneau-solaire.jpg");
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  background-position: center;
+  background-size: cover;
+  padding-top: 38%;
+  height: 100%;
+
+ }
+
+body section.def div.text {
+    position: absolute;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.4); 
+  color: white;
+  font-weight: bold;
+  z-index: 2;
+  width: 100%;
+  transform: translat(-50% ,-50%);
+  top: 100%;
+  left: 0%;
+
+ }
+body section.def div.text h1{
+    font-size: 315%;
+    font-weight: 100;
+    text-shadow: 5px 5px 10px black;
+    padding-left: 10%;
+    padding-top: 4%;
+    padding-bottom: 6%;
+    color: #7562E5;
+
+
+    }
+body section.def div.text p{
+ font-size: 25px;
+    padding-bottom: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    }
+    
+body section.def div.text h2{
+       font-size: 35px;
+    font-weight: 100;
+    text-shadow: 5px 5px 10px black;
+    padding-left: 80px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #648890;
+ }
+
+body section.def div.text p{
+ font-size: 25px;
+    padding-bottom: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    }
+body section.def div.text p a{
+    font-size: 25px; 
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom:5px ;
+    border: 2px 2px solid black;
+    border-top-right-radius:15px ;
+    border-bottom-left-radius:15px ;
+    border-bottom-right-radius:-15px ;
+    border-top-left-radius:-15px ;
+    box-shadow: 2px 2px 7px black;  
+    background-color: #001956;
+    color: white;
+}
+body section.def div.text p a{
+
+ }
+/**************************************/
+ /**************service****************/
+/************************************/
+
+section.service{
+    box-sizing: border-box;
+ }
+body section.service div.img {
+  /* The image used */
+  background-image: url("https://i1.wp.com/www.sun-energie.fr/wp-content/uploads/images/panneau_photovoltaique_qu_est_ce_que_c_est_15.jpg?w=1250");
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  background-position: center;
+  background-size: cover;
+  padding-top: 800px;
+  height: 100%;
+
+ }
+
+
+/*******************************************************************************************************************/
+ /**************page d'etude****************************************************************************************/
+/******************************************************************************************************************/
+header.etude{
+    height: -100%;
+    width: -160%;
+    background-image: url(https://www.colibri.solar/wp-content/uploads/2021/06/En-quoi-consiste-letude-dun-projet-photovoltaique-1.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+ } 
+/**************************************/
+ /**************nav bar****************/
+/************************************/
+.navbar a{
+    color: #C04401;
+    font-size: 28px;
+    z-index: 0.1;
+
+ }
+.navbar .navlink ul li a:hover{
+  color: #FE2B2B;
+ font-weight: 300px;
+ transition: 0.8s;
+ }
+header.etude .navbar .logo{
+   font-size: 2.5em;
+   font-weight:bold ;
+   text-shadow: 4px 4px 7px black;
+   color: #FAA700;
+
+ }
+/***************************************************/
+ /*********bouton pour l'etude**********************/
+/**************************************************/
+header.etude div.etude {
+ 
+    padding-right: 0;
+    padding-left:25%;
+  padding-top: 30%;
+
+ }
+header.etude div.etude  a{ 
+    font-size: 35px; 
+    padding-left: 55px;
+    margin-left: 50px;
+    padding-right: 55px;
+    margin-right: 50px;
+    padding-top: 25px;
+    
+    padding-bottom:25px ; 
+    left: 15%;
+    border: 2px 2px solid black;
+    border-top-right-radius:15px ;
+    border-bottom-left-radius:15px ;
+    border-bottom-right-radius:-15px ;
+    border-top-left-radius:-15px ;
+    box-shadow: 4px 4px 11px black;  
+    background-color: #001956;
+    color: white;
+ }
+header.etude div.etude  p{
+    display: none;
+ }
+header.etude div.etude  a:hover{ 
+    background-color: white ;
+    color: #001956;
+    transition: 1.3s;
+
+ }
+header div.etude::before{
+ display: none;
+ content: "";
+ transition: all 1.3s ease;
+ }
+
+header div.etude::after{
+ display: flex;
+ content: "";
+ transition: all 1.3s ease;
+ }
+
+/*****************************************/
+ /********explication etude****************/
+/*****************************************/
+section.etude{
+    box-sizing: border-box;
+   
+ }
+body section.etude div.img {
+  /* The image used */
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD67GEdLpD5RwC7Pj-Z-_jcHegMuwXntbpJg&usqp=CAU");
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  background-position: center;
+  background-size: cover;
+  padding-top:800px;
+  transform: translate(0 , 00%);
+  height: 100%;
+
+ }
+body section.etude div.text {
+    position: absolute;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  z-index: 2;
+  width: 100%;
+  transform: translat(-50% ,0%);
+  padding-bottom: 70px;
+  top: 100%;
+  left: 0%;
+ }
+body section.etude div.text h1{
+    font-size: 50px;
+    font-weight: 100;
+    text-shadow: 5px 5px 10px black;
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    color: #7562E5;
+ }
+body section.etude div.text h2{
+       font-size: 35px;
+    font-weight: 100;
+    text-shadow: 5px 5px 10px black;
+    padding-left: 80px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    color: #648890;
+ }
+body section.etude div.text p{
+ font-size: 25px;
+ padding-bottom: 40px;
+ padding-left: 50px;
+ padding-right: 50px;
+ }
+body section.etude div.text  a{
+    font-size: 25px;
+    text-align: center;
+    padding-left: 25%;
+    padding-right: 25%;
+    margin-top:2% ;
+    padding-top: 2%;
+    padding-bottom:2% ;
+    border: 2px 2px solid black;
+    border-top-right-radius:15px ;
+    border-bottom-left-radius:15px ;
+    border-bottom-right-radius:-15px ;
+    border-top-left-radius:-15px ;
+    box-shadow: 2px 2px 7px black;  
+    background-color: #001956;
+    color: white;
+    margin-left: 10%;
+    margin-right:10% ;
+ }   
+/**************************************/
+ /**************bouton pour l'etude****************/
+/************************************/
+body section.etude div.text  a:hover{
+        background-color:white ;
+        color: #001956;
+        transition: 1.3s;
+
+    }
+/**************************************/
+ /**************img****************/
+/************************************/
+section.supernovaetude{
+    box-sizing: border-box;
+    bottom: 0%;
+ }
+body section.supernovaetude div.img {
+  /* The image used */
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNapMEGjmkt0Xf9rYG8qF_p95ejlpTAtB0_bZMWB1-JBWCP3Ca1EvWcHjP1VOBQQs7AqE&usqp=CAU");
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  background-position: center;
+  background-size: cover;
+  padding-top:600px;
+  transform: translate(0 , 0%);
+  height: 120%;
+
+ }
+section.commandetude{
+    box-sizing: border-box;
+    bottom: 0%;
+ }
+body section.commandetude div.img {
+  /* The image used */
+  background-image: url("https://www.cerise-techniques.com/wp-content/uploads/2018/06/Capture1.png");
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  background-position: center;
+  background-size: cover;
+  padding-top:850px;
+  transform: translate(0 , 0%);
+  height: 100%;
+
+ }
+body section.commandetude div.img2 {
+  background-image: url("https://www.consoglobe.com/wp-content/uploads/2018/02/Migel_shutterstock_2810656791-e1519725961819.jpg");
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top:570px;
+  transform: translate(0 , 0%);
+  height: 100%;
+ bottom: 0%;
+ }
+
+/**************************************************************************************************************************************************************************************/
+/**************************************page pour la maintenance***********************************************************************************************************************/
+/**************************************************************************************************************************************************************************************/
+header.maintenance{
+    height: -100%;
+    width: -160%;
+    background-image: url("https://la-camda-energie.com/wp-content/uploads/2021/07/La-CAMDA-energies_technicien-photovoltaique-avec-tablette.jpg");
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+ } 
+/********************************************/
+ /****bouton pour la maintenance************/
+/******************************************/
+header.maintenance div.maintenance {
+ 
+    padding-right: 0;
+    padding-left:25%;
+  padding-top: 30%;
+
+}
+
+header.maintenance div.maintenance  a{ 
+    font-size: 35px; 
+    padding-left: 55px;
+    margin-left: 50px;
+    padding-right: 55px;
+    margin-right: 50px;
+    padding-top: 25px;
+    
+    padding-bottom:25px ; 
+    left: 15%;
+    border: 2px 2px solid black;
+    border-top-right-radius:15px ;
+    border-bottom-left-radius:15px ;
+    border-bottom-right-radius:-15px ;
+    border-top-left-radius:-15px ;
+    box-shadow: 4px 4px 11px black;  
+    background-color: #001956;
+    color: white;
+}
+header.maintenance div.maintenance  a:hover{ 
+    background-color: white ;
+    color: #001956;
+    transition: 1.3s;
+
+ }
+
+section.maintenance{
+    box-sizing: border-box;
+    bottom: 0%;
+ }
+/************************************/
+ /**************img*******************/
+/************************************/
+body section.maintenance div.img {
+  /* The image used */
+  background-image: url("https://spconfortenr.fr/wp-content/uploads/2020/04/repara-photovoltaique-min.jpg");
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  background-position: center;
+  background-size: cover;
+  padding-top:830px;
+  transform: translate(0 , 0%);
+  height: 100%;
+
+ }
+body section.maintenance div.img2 {
+  /* The image used */
+     background-image: url(https://mon-panneau-solaire.info/wp-content/uploads/2019/06/nettoyage-panneaux-solaires-1024x684.jpeg); 
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top:655px;
+  transform: translate(0 , 0%);
+  height: 100%;
+ bottom: 0%;
+ }
+ body section.maintenance div.img3 {
+  /* The image used */
+  background-image: url("https://6nergies.fr/wp-content/uploads/2021/06/nettoyage-panneaux-solaires.jpg");
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top:740px;
+  transform: translate(0 , 0%);
+  height: 100%;
+ bottom: 0%;
+ }
+  body section.maintenance div.img4 {
+   background-image: url("https://solaire-avantages.com/wp-content/themes/yootheme/cache/nett1-eac32225.jpeg");
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top:540px;
+  transform: translate(0 , 0%);
+  height: 100%;
+ bottom: 0%;
+ }
+/************************************/
+/**************text*******************/
+/************************************/
+body section.maintenance div.text {
+    position: absolute;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  z-index: 2;
+  width: 100%;
+  transform: translat(-50% ,0%);
+  padding-bottom: 70px;
+  top: 100%;
+  left: 0%;
+ }
+body section.maintenance div.text h1{
+    font-size: 50px;
+    font-weight: 100;
+    text-shadow: 5px 5px 10px black;
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    color: #7562E5;
+ }
+body section.maintenance div.text h2{
+       font-size: 35px;
+    font-weight: 100;
+    text-shadow: 5px 5px 10px black;
+    padding-left: 80px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    color: #648890;
+ }
+body section.maintenance div.text p{
+ font-size: 25px;
+ padding-bottom: 40px;
+ padding-left: 50px;
+ padding-right: 50px;
+ }
+body section.maintenance div.text  a{
+    font-size: 25px;
+    text-align: center;
+    padding-left: 25%;
+    padding-right: 25%;
+    margin-top:2% ;
+    padding-top: 2%;
+    padding-bottom:2% ;
+    border: 2px 2px solid black;
+    border-top-right-radius:15px ;
+    border-bottom-left-radius:15px ;
+    border-bottom-right-radius:-15px ;
+    border-top-left-radius:-15px ;
+    box-shadow: 2px 2px 7px black;  
+    background-color: #001956;
+    color: white;
+    margin-left: 10%;
+    margin-right:10% ;
+    
+ }
+body section.maintenance div.text  a:hover{
+    background-color: white ;
+    color: #001956;
+    transition: 1.3s;
+
+ }
+
+/**************************************************************************************************************************************************************************************/
+/**************************************************************************************************************************************************************************************/
+/**************************************page d'aide***********************************************************************************************************************/
+/**************************************************************************************************************************************************************************************/
+body.aide header.aide {
+    height: -100%;
+    width: -160%;
+    background-image: url("https://www.ines-solaire.org/site/assets/files/2086/aap8494.1408x450.webp?73e1y");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+ } 
+/********************************************/
+ /****bouton pour l'aide maintenance/etude************/
+/******************************************/
+
+body.aide header div.aide {
+ padding-left: 0;
+    padding-right: 0;
+    padding-left: 7%;
+  padding-top: 10%;
+
+ }
+
+header.aide div.aide  a{ 
+  font-size: 25px; 
+    padding-left: 55px;
+    margin-left: 40px;
+    padding-right: 55px;
+    margin-right: 50px;
+    padding-top: 25px;
+    padding-bottom:25px ; 
+    left: 15%;
+    border: 2px 2px solid black;
+    border-top-right-radius:15px ;
+    border-bottom-left-radius:15px ;
+    border-bottom-right-radius:-15px ;
+    border-top-left-radius:-15px ;
+    box-shadow: 4px 4px 11px black;  
+    background-color: #0018565b;
+    color: rgb(255, 255, 255);
+ }
+ header.aide div.aide  a.e{
+    padding-left: 155px;
+     padding-right: 155px;
+ }
+header.aide div.aide  a:hover{ 
+    background-color: rgba(255, 255, 255, 0.425) ;
+    color: #001956;
+    transition: 1s;
+
+ }
+ header.aide div.aide  p{
+    display: none;
+ }
+ /**************************************************************************************************************************************************************************************/
+/**************************************************************************************************************************************************************************************/
+/**************************************page d'aide POUR LA MAINTENANCE/ETUDE***********************************************************************************************************************/
+/**************************************************************************************************************************************************************************************/
+
+body header.aide1 {
+    height: -10%;
+    width: -160%;
+    padding-top: -70%;
+    padding-bottom: -60%;
+    background-image: url("https://www.ines-solaire.org/site/assets/files/2086/aap8494.1408x450.webp?73e1y");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+   
+ }
+ header.aide1 p {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+
+ } 
+ /**************************************************************************************************************************************************************************************/
+/**************************************************************************************************************************************************************************************/
+/**************************************page de contact***********************************************************************************************************************/
+/**************************************************************************************************************************************************************************************/
+body header.contact {
+    height: -160%;
+    width: -160%;
+   
+    padding-bottom: -60%;
+    background-image: url("https://www.cerise-techniques.com/wp-content/uploads/2018/06/Capture1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+   
+ }
+
+ body header.contact h2{
+    color: white;
+    font-size: 30px;
+    text-shadow: 4px 4px 8px black;
+    padding-top: 50px;
+    padding-bottom:10px;
+    padding-left: 30%;
+ }
+ body header.contact p{
+    color: rgb(12, 140, 224);
+    font-size: 20px;
+ text-shadow: 3px 3px 6px black;
+ text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40%;
+ }
+  body header.contact div.contact{
+    padding-top: 100px;
+
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  z-index: 2;
+
+  }
+/**************************************************************************************************************************************************************************************/
+/**************************************************************************************************************************************************************************************/
+/*************************************modification selon les format**********************************************************************************************************************************/
+/**************************************************************************************************************************************************************************************/
+/**************************************************************************************************************************************************************************************/
+/**************************************************************************************************************************************************************************************/
+
+
+@media screen and  (max-width:980px) {
+.navbar .navlink{
+        display: none;
+    }
+}
+
+@media screen and  (max-width:1323px) {
+/**************************************page d'acceuil***********************************************************************************************************************/
+/**************************************************************************************************************************************************************************************/
+
+/**************************************/
+ /*****boutons (etude/maintenance)******/
+/**************************************/
+header div.etude {
+ 
+    padding-left: 0;
+    padding-right: 0;
+    padding-left: 5%;
+  padding-top: 15%;
+
+ }
+header div.etude  a{ 
+    font-size: 25px; 
+    padding-left: 35px;
+    margin-left: 35px;
+    padding-right: 35px;
+    margin-right: 35px;
+    padding-top: 20px;
+    padding-bottom:20px ; 
+    left: 10%;
+
+ }
+body section.service div.img {
+  padding-top: 900px;
+  height: 100%;
+
+ }
+ body section.commandetude div.img2 {
+    display: none;
+
+ }
+  body section.commandetude div.img {
+    padding-top: 1000px;
+
+  }
+  body section.supernovaetude div.img {
+padding-top: 600px;
+}
+
+@media screen and  (max-width:1027px) {
+
+ /**************************************************************************************************************************************************************************************/
+/**************************************************************************************************************************************************************************************/
+/**************************************page d'acceuil***********************************************************************************************************************/
+/**************************************************************************************************************************************************************************************/
+
+header div.etude {
+ 
+    padding-left: 0;
+    padding-right: 0;
+    padding-left: 5%;
+  padding-top: 25%;
+
+ }
+header div.etude  a{ 
+    font-size: 20px; 
+    padding-left: 25px;
+    margin-left: 25px;
+    padding-right: 25px;
+    margin-right: 25px;
+    padding-top: 18px;
+    padding-bottom:18px ; 
+    left: 8%;
+}
+body section.service div.img {
+    padding-top: 950px;
+}
+body section.def div.img {
+ padding-top: 67%;
+
+}
+ 
+}
+@media screen and  (max-width:824px) {
+ /**************************************************************************************************************************************************************************************/
+/**************************************************************************************************************************************************************************************/
+/**************************************page d'acceuil***********************************************************************************************************************/
+/**************************************************************************************************************************************************************************************/
+
+header div.etude {
+ 
+    padding-left: 0;
+    padding-right: 0;
+    padding-left: 5%;
+  padding-top: 35%;
+
+ }
+header div.etude  a{ 
+    font-size: 25px; 
+    padding-left: 20px;
+    margin-left: 20px;
+    padding-right: 20px;
+    margin-right: 20px;
+    padding-top: 15px;
+    padding-bottom:15px ; 
+    left: 8%;
+}
+body section.service div.img {}
+
+}
+@media screen and  (max-width:780px) {
+
+ /**************************************************************************************************************************************************************************************/
+/**************************************************************************************************************************************************************************************/
+/**************************************page d'acceuil***********************************************************************************************************************/
+/**************************************************************************************************************************************************************************************/
+
+header div.etude  p{
+ 
+
+}
+ header div.etude  a{ 
+    text-align: center;
+    font-size: 25px; 
+    padding-left: 20px;
+    margin-left: 20px;
+    padding-right: 20px;
+    margin-right: 20px;
+    padding-top: 15px;
+    padding-bottom:15px ; 
+    left: 8%;
+    display: flex;
+    margin-top: 2%;
+    margin-bottom: 2%;
+ }
+body section.service div.img {
+    padding-top: 1000px;
+    display: flex;
+}
+body section.def div.img {
+ padding-top: 100%;
+    display: flex;
+
+}
+}
