@@ -18,8 +18,8 @@ body {
 header{
     height: 100vh;
     width: 100wh;
-    background-image: url(https://imgs.search.brave.com/xgifCiScQrKsUz-p8FbWo1Hz72zvb1jsaYK6gp0z4V8/rs:fit:1200:768:1/g:ce/aHR0cHM6Ly93d3cu/c2l0ZS1hbm5vbmNl/LmJlL3NoLWltZy9y/ZW50YWJpbGl0ZS1w/YW5uZWF1LXNvbGFp/cmVzLXBob3Rvdm9s/dGFpcXVlcy0xMjgw/eDY0MF9wYW5uZWF1/JTJCc29sYWlyZSUy/QnBob3Rvdm9sdGFp/cXVlLmpwZWc); 
-    background-size: 1500px 1000px;
+       background-image: url(https://algeriainvest.com/storage/uploads/news_logos/586011209news_logo.jpg); 
+    background-size: cover;
  }   
 header h1{
     font-family: 'Fredoka', sans-serif;
